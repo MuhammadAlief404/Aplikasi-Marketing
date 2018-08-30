@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ID Konsumen"
+        android:id="@+id/textView82"
+        android:singleLine="false"
+        android:layout_alignBottom="@+id/txtIDK"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Cara"
+        android:id="@+id/textView84"
+        android:layout_above="@+id/txtPesan"
+        android:layout_alignEnd="@+id/textView87"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Isi Pesan"
+        android:id="@+id/textView85"
+        android:layout_alignBottom="@+id/txtPesan"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Respon"
+        android:id="@+id/textView86"
+        android:layout_alignBottom="@+id/txtRespon"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Presentase AJB"
+        android:id="@+id/textView87"
+        android:layout_alignBottom="@+id/txtAjb"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtIDK"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtCara"
+        android:layout_below="@+id/txtIDK"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtPesan"
+        android:layout_below="@+id/txtCara"
+        android:layout_alignStart="@+id/txtCara" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtRespon"
+        android:layout_below="@+id/txtPesan"
+        android:layout_alignStart="@+id/txtPesan" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/txtAjb"
+        android:layout_below="@+id/txtRespon"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tanggal Follow Up"
+        android:id="@+id/textView83"
+        android:layout_below="@+id/textView87"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/button2"
+        android:layout_alignTop="@+id/datePicker"
+        android:layout_alignEnd="@+id/txtAjb"
+        android:layout_marginTop="38dp" />
+
+    <DatePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/datePicker"
+        android:layout_below="@+id/textView83"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/button2" />
+
+</RelativeLayout>

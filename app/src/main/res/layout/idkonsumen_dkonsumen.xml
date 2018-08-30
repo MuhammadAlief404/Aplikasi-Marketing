@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ID Konsumen"
+        android:id="@+id/textView46"
+        android:textSize="22dp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editID"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView53" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editTgl"
+        android:layout_alignStart="@+id/editID"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/editID" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:id="@+id/textView48"
+        android:textSize="22dp"
+        android:layout_alignBottom="@+id/editNama"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editNama"
+        android:layout_below="@+id/editTgl"
+        android:layout_alignStart="@+id/editTgl" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tanggal"
+        android:id="@+id/textView47"
+        android:textSize="22dp"
+        android:layout_above="@+id/editNama"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kelamin"
+        android:id="@+id/textView49"
+        android:textSize="22dp"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_alignStart="@+id/textView54" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alamat"
+        android:id="@+id/textView51"
+        android:textSize="22dp"
+        android:layout_above="@+id/editHp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambah"
+        android:id="@+id/buttonInsert"
+        android:onClick="insert"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textView89" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editHp"
+        android:layout_above="@+id/editTelp"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hp"
+        android:id="@+id/textView50"
+        android:textSize="22dp"
+        android:layout_alignBottom="@+id/editHp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editTelp"
+        android:layout_above="@+id/editSumber"
+        android:layout_alignStart="@+id/editSumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telepon"
+        android:id="@+id/textView52"
+        android:textSize="22dp"
+        android:layout_alignBottom="@+id/editTelp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editSumber"
+        android:layout_above="@+id/editMinat"
+        android:layout_toEndOf="@+id/textView53" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sumber Informasi"
+        android:id="@+id/textView53"
+        android:textSize="22dp"
+        android:layout_alignBottom="@+id/editSumber"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Call / Walk"
+        android:id="@+id/textView54"
+        android:textSize="22dp"
+        android:layout_above="@+id/buttonInsert"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editMinat"
+        android:layout_above="@+id/edtKtp"
+        android:layout_toEndOf="@+id/textView53" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minat Type"
+        android:id="@+id/textView55"
+        android:textSize="22dp"
+        android:layout_alignBottom="@+id/editMinat"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rgCall"
+        android:layout_toEndOf="@+id/textView46"
+        android:layout_alignStart="@+id/editMinat"
+        android:layout_below="@+id/edtKtp">
+
+        <RadioButton
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:id="@+id/rbCall"
+            android:layout_alignStart="@+id/rgCall"
+            android:layout_above="@+id/buttonInsert"
+            android:layout_alignTop="@+id/rgCall"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="168dp"
+            android:layout_height="wrap_content"
+            android:text="Walk"
+            android:id="@+id/radioButton"
+            android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No KTP"
+        android:id="@+id/textView89"
+        android:textSize="22dp"
+        android:layout_above="@+id/textView54"
+        android:layout_alignEnd="@+id/textView52" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edtKtp"
+        android:layout_alignTop="@+id/textView89"
+        android:layout_alignStart="@+id/rgCall" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/editNama"
+        android:layout_alignStart="@+id/editNama"
+        android:id="@+id/radioGroup"
+        android:layout_above="@+id/textView51">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki"
+            android:id="@+id/radioButton4"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"
+            android:id="@+id/radioButton5"
+            android:checked="false" />
+
+    </RadioGroup>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/edtAlamat"
+        android:layout_alignTop="@+id/textView51"
+        android:layout_alignEnd="@+id/editHp"
+        android:layout_alignStart="@+id/editHp" />
+</RelativeLayout>

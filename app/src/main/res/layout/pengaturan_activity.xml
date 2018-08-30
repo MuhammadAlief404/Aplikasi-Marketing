@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ganti Sandi"
+        android:id="@+id/textView15"
+        android:textSize="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Simpan"
+        android:id="@+id/button"
+        android:layout_marginTop="46dp"
+        android:layout_below="@+id/textView81"
+        android:layout_toEndOf="@+id/textView16" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sandi Lama"
+        android:id="@+id/textView16"
+        android:textSize="25dp"
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sandi Baru"
+        android:id="@+id/textView17"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView16"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konfirmasi Sandi"
+        android:id="@+id/textView81"
+        android:textSize="25dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/textView15" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtPassB2"
+        android:layout_alignBottom="@+id/textView81"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtPassB1"
+        android:layout_above="@+id/textView81"
+        android:layout_alignStart="@+id/edtPassB2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/edtPassL"
+        android:layout_above="@+id/textView17"
+        android:layout_alignStart="@+id/edtPassB1" />
+
+</RelativeLayout>

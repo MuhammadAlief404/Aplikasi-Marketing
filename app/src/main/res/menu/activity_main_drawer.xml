@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/pribadi"
+            android:icon="@mipmap/ic_profile"
+            android:title="Data Pribadi" />
+        <item
+            android:id="@+id/konsumen"
+            android:icon="@mipmap/ic_konsumen"
+            android:title="Konsumen" />
+        <item
+            android:id="@+id/kegiatan"
+            android:icon="@mipmap/ic_kegiatan"
+            android:title="Kegiatan" />
+        <item
+            android:id="@+id/pengaturan"
+            android:icon="@mipmap/ic_pengaturan4"
+            android:title="Pengaturan" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/tentang"
+                android:icon="@mipmap/ic_tentang"
+                android:title="Tentang" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@mipmap/ic_logout"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

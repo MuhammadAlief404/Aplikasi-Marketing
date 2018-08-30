@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btnDataK"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/ic_kegiatan" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Konsumen"
+        android:id="@+id/textView9"
+        android:textSize="25dp"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/btnDataK" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btnBerkasK"
+        android:background="@mipmap/ic_kegiatan"
+        android:layout_below="@+id/btnDataK"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Berkas Konsumen"
+        android:id="@+id/textView10"
+        android:textSize="25dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/btnDataK"
+        android:layout_toEndOf="@+id/btnBerkasK" />
+
+
+</RelativeLayout>

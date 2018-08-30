@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.airteam.sistemaplikasimarketing.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btnPribadi"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:background="@mipmap/ic_pribadif" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konsumen"
+        android:id="@+id/textView2"
+        android:textSize="23dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/btnKonsumen"
+        android:layout_alignStart="@+id/btnKonsumen"
+        android:layout_alignEnd="@+id/btnKonsumen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Data Pribadi"
+        android:id="@+id/textView3"
+        android:textSize="23dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/btnPribadi"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnPribadi" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btnKegiatan"
+        android:background="@mipmap/ic_kegiatan2"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kegiatan"
+        android:id="@+id/textView4"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/btnKegiatan"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/btnKegiatan" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btnPengaturan"
+        android:background="@mipmap/ic_pengaturan3"
+        android:layout_alignTop="@+id/btnKegiatan"
+        android:layout_alignStart="@+id/btnKonsumen" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan"
+        android:id="@+id/textView5"
+        android:textSize="25dp"
+        android:textAlignment="center"
+        android:layout_below="@+id/btnPengaturan"
+        android:layout_alignParentEnd="true"
+        android:layout_alignStart="@+id/btnPengaturan" />
+
+    <ImageButton
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/btnKonsumen"
+        android:background="@mipmap/ic_konsumen2"
+        android:layout_above="@+id/textView3"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

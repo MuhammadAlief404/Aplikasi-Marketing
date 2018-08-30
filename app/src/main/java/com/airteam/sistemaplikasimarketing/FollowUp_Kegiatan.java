@@ -1,0 +1,15 @@
+package com.airteam.sistemaplikasimarketing;
+
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+/**
+ * Created by Creepz404x on 4/21/2016.
+ */
+public class FollowUp_Kegiatan  extends AppCompatActivity{
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.followup_kegiatan);
+    }
+}
